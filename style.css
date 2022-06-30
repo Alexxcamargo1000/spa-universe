@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-inline: 100px
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  padding-block: 40px;
+  max-height: 122px;
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+  color: #C4C4CC;
+  font-size: 24px;
+  line-height: 22px;
+
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+main:not(#home) {
+  padding-top: 185px;
+  gap: 16px;
+}
+
+#home {
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  font-size: 48px;
+  line-height: 125%;
+ 
+  color: #E1E1E6;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 160%;  
+  color: #E1E1E6;
+  max-width: 648px;
+}
+
+#home .button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 12px 32px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#home .button:hover {
+  color: #02799D;
+  background: #FFFFFF;
+
+}
+
+.img-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
